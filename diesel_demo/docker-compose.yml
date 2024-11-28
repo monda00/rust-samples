@@ -1,0 +1,8 @@
+services:
+  diesel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: ["cargo", "run"]
